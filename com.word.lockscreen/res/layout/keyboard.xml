@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableLayout
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow android:background="#00cfffff" >
+
+            <Button
+                android:id="@+id/btn_q"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="Q" />
+
+            <Button
+                android:id="@+id/btn_w"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="W" />
+
+            <Button
+                android:id="@+id/btn_e"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="E" />
+
+            <Button
+                android:id="@+id/btn_r"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="R" />
+
+            <Button
+                android:id="@+id/btn_t"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="T" />
+
+            <Button
+                android:id="@+id/btn_y"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="Y" />
+
+            <Button
+                android:id="@+id/btn_u"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="U" />
+
+            <Button
+                android:id="@+id/btn_i"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="I" />
+            
+            <Button
+                android:id="@+id/btn_o"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="O" />
+
+            <Button
+                android:id="@+id/btn_p"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="P" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/second_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_line"
+        android:stretchColumns="*"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+         >
+
+        <TableRow android:background="#00cfffff" >
+
+            <Button
+                android:id="@+id/btn_a"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/btn_s"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="S" />
+
+            <Button
+                android:id="@+id/btn_d"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="D" />
+
+            <Button
+                android:id="@+id/btn_f"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="F" />
+
+            <Button
+                android:id="@+id/btn_g"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="G" />
+
+            <Button
+                android:id="@+id/btn_h"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="H" />
+
+            <Button
+                android:id="@+id/btn_j"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="J" />
+
+            <Button
+                android:id="@+id/btn_k"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="K" />
+            
+            <Button
+                android:id="@+id/btn_l"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="L" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/third_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_line"
+        android:stretchColumns="*" 
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        >
+
+        <TableRow android:background="#00cfffff" >
+
+            <Button
+                android:id="@+id/btn_z"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="Z" />
+
+            <Button
+                android:id="@+id/btn_x"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="X" />
+
+            <Button
+                android:id="@+id/btn_c"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/btn_v"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="V" />
+
+            <Button
+                android:id="@+id/btn_b"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="B" />
+
+            <Button
+                android:id="@+id/btn_n"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="N" />
+
+            <Button
+                android:id="@+id/btn_m"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="M" />
+
+            
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/fourth_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/third_line"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:stretchColumns="*" >
+
+        <TableRow android:background="#00cfffff" >
+       
+           <Button
+                android:id="@+id/btn_captial"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_captial"
+                 />
+
+           <Button
+                android:id="@+id/btn_clear"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="Delete" />
+
+            <Button
+                android:id="@+id/btn_next"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="Next" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

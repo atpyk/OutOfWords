@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg2" />
+
+    <ImageButton
+        android:id="@+id/pin_imageview"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/word_view"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@+id/word_view"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pin" />
+
+    <TextView
+        android:id="@+id/word_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Persuade"
+        android:textColor="#404040"
+        android:textSize="65sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/phonetic_symbol_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="android"
+        android:textColor="#404040"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/meaning_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonetic_symbol_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="v.说服，劝服，被说服，使相信"
+        android:textColor="#404040"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_view"
+        android:layout_width="480dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/meaning_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+
+   
+
+    <ImageButton
+        android:id="@+id/add_list_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/input_view"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/input_view"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_btn" />
+
+    <ImageButton
+        android:id="@+id/unlock_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/input_view"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/input_view"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/unlock" />
+
+    <include
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        layout="@layout/keyboard" />
+
+</RelativeLayout>

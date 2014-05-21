@@ -1,0 +1,24 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <RelativeLayout 
+        android:id="@+id/select_word_liarbry"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        >
+        
+        <Button 
+            android:id="@+id/select_liarbry_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="选择词库"
+            android:background="@null"            
+            />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

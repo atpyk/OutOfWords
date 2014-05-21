@@ -1,0 +1,356 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableLayout
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow android:background="#00cfffff" >
+
+            <Button
+                android:id="@+id/btn_q"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="Q"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_w"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="W"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_e"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="E"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_r"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="R"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_t"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="T"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_y"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="Y"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_u"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="U"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_i"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="I"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_o"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="O"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_p"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="P"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/second_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_line"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="*" >
+
+        <TableRow android:background="#00cfffff" >
+
+            <Button
+                android:id="@+id/btn_a"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="A"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_s"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="S"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_d"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="D"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_f"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="F"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_g"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="G"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_h"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="H"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_j"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="J"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_k"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="K"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_l"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="L"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/third_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_line"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:stretchColumns="*" >
+
+        <TableRow android:background="#00cfffff" >
+
+            <Button
+                android:id="@+id/btn_z"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="Z"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_x"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="X"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_c"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="C"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_v"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="V"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_b"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="B"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_n"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="N"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_m"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="M"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/fourth_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/third_line"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:stretchColumns="*" >
+
+        <TableRow android:background="#00cfffff" >
+
+            <Button
+                android:id="@+id/btn_captial"
+                android:layout_width="45dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_captial"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                 />
+            
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="45dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="Clear"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="45dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="Delete"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="45dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_bg"
+                android:text="Next"
+                android:textColor="#554E4E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

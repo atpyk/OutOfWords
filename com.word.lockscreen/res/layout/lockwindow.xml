@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#ffffff" 
+    >
+
+    <ImageView 
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg2"
+        android:scaleType="fitXY"
+        />
+    
+    <TextView 
+        android:id="@+id/word_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Persuade"
+        android:textSize="38sp"
+        android:textColor="#404040"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/phonetic_symbol_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word_view"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="android"
+        android:textSize="13sp"
+        android:textColor="#404040"
+        android:textStyle="bold"
+        />
+     <TextView
+        android:id="@+id/meaning_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonetic_symbol_view"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="v.说服，劝服，被说服，使相信"
+        android:textSize="13sp"
+        android:textColor="#404040"
+        android:textStyle="bold"
+        />
+     
+     <EditText 
+         android:id="@+id/input_view"
+         android:layout_width="200dp"
+         android:layout_height="40dp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="60dp"
+         android:layout_below="@+id/meaning_view"
+         android:background="@drawable/edit_text_bg"
+         android:textColor="#000000"
+         android:inputType="text"       
+         />
+     
+     <TextView 
+         android:id="@+id/promp_msg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@+id/input_view"
+         android:layout_marginTop="10dp"
+         android:textColor="#000000"
+         />
+     
+     <ImageButton 
+         android:id="@+id/add_list_btn"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_toLeftOf="@+id/input_view"
+         android:layout_alignTop="@+id/input_view"
+         android:layout_marginRight="10dp"
+         android:src="@drawable/add_btn"
+         android:scaleType="centerInside"
+         android:background="@null"
+         />
+     
+     <ImageButton
+         android:id="@+id/unlock_btn"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_toRightOf="@+id/input_view"
+         android:layout_alignTop="@+id/input_view"
+         android:layout_marginLeft="10dp"
+         android:src="@drawable/unlock"
+         android:scaleType="centerInside"
+         android:background="@null"
+         />
+     
+      <include
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        layout="@layout/keyboard" />
+     
+</RelativeLayout>

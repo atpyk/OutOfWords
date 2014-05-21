@@ -1,0 +1,603 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bar_bg" >
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/logo_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/logo_image"
+            android:text="词穷"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/setting_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/top_bar_layout"
+        android:layout_centerHorizontal="true"
+        android:background="#a8a8a8" >
+
+        <TextView
+            android:id="@+id/review_tab_btn"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:background="#C8C8C8"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="复习"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/test_tab_btn"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/review_tab_btn"
+            android:background="#C8C8C8"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="测验"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/success_tab_btn"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/test_tab_btn"
+            android:background="#C8C8C8"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="成就"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/mission_tab_btn"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/success_tab_btn"
+            android:background="#C8C8C8"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="挑战"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/wordbook_tab_btn"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/mission_tab_btn"
+            android:background="#C8C8C8"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="单词本"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/setting_tab_btn"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/wordbook_tab_btn"
+            android:background="#a8a8a8"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="设置"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_word_liarbry"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tab_layout"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/select_liarbry_btn"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="选择词库"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/select_liarbry_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/select_liarbry_btn"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#f8f8f8" />
+
+        <TextView
+            android:id="@+id/select_liarbry_h_line"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/select_liarbry_line1"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="————"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/select_liarbry_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_liarbry_line1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/select_liarbry_h_line"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/wordbook_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单词本"
+                android:textColor="#686868" />
+
+            <RadioButton
+                android:id="@+id/tec4_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="四级核心词汇"
+                android:textColor="#686868" />
+
+            <RadioButton
+                android:id="@+id/tec6_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="六级核心词汇"
+                android:textColor="#686868" />
+
+            <RadioButton
+                android:id="@+id/ielts_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:checked="true"
+                android:text="雅思核心词汇"
+                android:textColor="#686868" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/get_more_library"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/select_liarbry_radio_group"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="获得更多词库..."
+            android:textColor="#686868"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/select_liarbry_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#585858" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/daily_word_count"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/select_word_liarbry"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/daily_word_label"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="每日记忆单词数"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/daily_word_count_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/daily_word_label"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#f8f8f8" />
+
+        <TextView
+            android:id="@+id/daily_word_h_line"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/daily_word_count_line1"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="————"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/select_liarbry_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daily_word_count_line1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/daily_word_h_line"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_btn_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10个"
+                android:textColor="#686868" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="15个"
+                android:textColor="#686868" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:checked="true"
+                android:text="30个"
+                android:textColor="#686868" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:checked="true"
+                android:text="50个"
+                android:textColor="#686868" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#585858" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loc_model_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/daily_word_count"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/loc_model_label"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="锁屏模式"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/loc_model_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/loc_model_label"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#f8f8f8" />
+
+        <TextView
+            android:id="@+id/loc_model_h_line"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/loc_model_line1"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="————"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/loc_model_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loc_model_line1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/loc_model_h_line"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_btn_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="复习模式"
+                android:textColor="#686868" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:checked="true"
+                android:text="记忆模式"
+                android:textColor="#686868" />
+            
+            <RadioButton
+                android:id="@+id/radio_btn_chanllge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"                
+                android:text="挑战模式"
+                android:textColor="#686868" />
+            
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/loc_model_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#585858" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/default_psd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/loc_model_layout"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/default_psd_label"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="默认密码"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/default_psd_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/default_psd_label"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#f8f8f8" />
+
+        <TextView
+            android:id="@+id/default_psd_h_line"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/default_psd_line1"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="————"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/default_psd_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/default_psd_h_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/default_psd_h_line"
+            android:text="启用"
+            android:textColor="#686868"
+            android:textSize="16sp"
+                     
+             />
+
+        <EditText
+            android:id="@+id/default_psd_inputview"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/default_psd_check_box"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/default_psd_check_box"
+            android:visibility="gone"
+             />
+
+        <Button
+            android:id="@+id/done_setting_psd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/default_psd_inputview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/default_psd_inputview"
+            android:text="完成" 
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#585858" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loc_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/default_psd_layout"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/select_liarbry_btn"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="锁屏背景"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/h_line"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/select_liarbry_btn"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="————"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/current_library"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/h_line"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="默认背景/系统背景"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#585858" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/turn_onOff_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/loc_background_layout"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/turn_onOff_label"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="开启锁屏"
+            android:textSize="20sp" 
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/turn_onOff_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/turn_onOff_label"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#f8f8f8" />
+
+        <TextView
+            android:id="@+id/turn_onOff_h_line"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/turn_onOff_line1"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="————"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/turn_onOff_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/turn_onOff_h_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/turn_onOff_h_line"
+            android:text="启用"
+            android:textColor="#686868"
+            android:textSize="16sp"
+                     
+             />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#585858" />
+    </RelativeLayout>
+
+</RelativeLayout>
